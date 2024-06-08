@@ -26,3 +26,9 @@ class SMSNotification extends Notification {
         return console.log(`Notification has been sent to ${this.phoneNumber}`);
     }
 };
+
+let emailNotification = new EmailNotification(1,"11:20","Hello","techup@gmail.com");
+emailNotification.send();
+  
+let smsNotification = new SMSNotification(2, "11:20", "Hello", "099-9999999");
+smsNotification.send();

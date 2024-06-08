@@ -23,3 +23,9 @@ class SMSNotification {
         return console.log(`Notification has been sent to ${this.phoneNumber}`);
     }
  };
+
+ let firstEmail = new EmailNotification(1, "11:20", "Hello", "techup@gmail.com");
+firstEmail.send();
+
+let firstNumber = new SMSNotification(2, "11:20", "Hello", "099-9999999");
+firstNumber.send();
